@@ -6,4 +6,13 @@
 
 p "Enter two words separated by a comma"
 
-user_words = gets.chomp
+user_words = gets.chomp.split(",")
+a = user_words[0].gsub(/\s+/, "").split("")
+b = user_words[1].gsub(/\s+/, "").split("")
+flag = true
+
+if a.sort == b.sort
+    p true
+else
+    p false
+end

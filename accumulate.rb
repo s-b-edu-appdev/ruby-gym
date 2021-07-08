@@ -6,9 +6,13 @@
 p "Are we there yet?"
 
 answer = gets.chomp.downcase
+answer_list = Array.new
+answer_list << answer
 
 while answer != "yes"
   p "Are we there yet?"
-  
   answer = gets.chomp.downcase
+  answer_list << answer
+   
 end
+p answer_list

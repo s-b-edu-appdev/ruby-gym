@@ -7,3 +7,7 @@
 
 
 p "Enter in the secret you want to decode"
+input = gets.chomp
+output = input.gsub("1","a").gsub("2","e").gsub("3","i").gsub("4","o").gsub("5","u")
+#output = output.gsub("A","1").gsub("E","2").gsub("I","3").gsub("O","4").gsub("U","5")
+p output

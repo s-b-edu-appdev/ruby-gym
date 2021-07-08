@@ -37,3 +37,20 @@
 
 
 p "Enter an integer"
+a = gets.chomp.to_i
+output = String.new
+if a%3 == 0
+    output << "Pling"
+end
+if a%5 == 0
+    output << "Plang"
+end
+if a%7 == 0
+    output << "Plong"
+end
+
+if output == ""
+    p a.to_s
+else
+    p output
+end
